@@ -11,23 +11,18 @@ export class Queenconfig {
  }
 
 
-class Leaf_0
+class Extra
 {
 };
 
-class Leaf_1
+class Page
 {
-};
-
-class Leaf_2
-{
+    static readonly extra = new Extra();
 };
 
 class Config
 {
-    static readonly leaf_0 = new Leaf_0();
-    static readonly leaf_1 = new Leaf_1();
-    static readonly leaf_2 = new Leaf_2();
+    static readonly page = new Page();
 };
 
 
