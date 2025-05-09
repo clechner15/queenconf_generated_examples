@@ -11,18 +11,13 @@ export class Queenconfig {
  }
 
 
-class Extra
+class Admin
 {
-};
-
-class Page
-{
-    static readonly extra = new Extra();
 };
 
 class Config
 {
-    static readonly page = new Page();
+    static readonly admin = new Admin();
 };
 
 
