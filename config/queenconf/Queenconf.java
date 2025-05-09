@@ -5,10 +5,14 @@ public class Queenconf {
 
     public class Config {
         public class Admin {
+  public final String adminPageIconName = "user"; // name of icon for admin page
         }
 
         public final Admin admin = new Admin();
 
+  public final boolean showExtraHeader = true; // show extra header
+  public final int rowsPerPage = 12; // how many rows per page are shown
+  public final boolean showBlackFridayBanner = true; // show black friday banner
     }
 
 }

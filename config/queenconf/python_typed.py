@@ -18,9 +18,13 @@ class Admin:
     def __init__(self):
         pass
 
+    adminPageIconName: ClassVar[str] = 'user'
  class Config:
     def __init__(self):
         pass
 
+    showExtraHeader: ClassVar[bool] = True
+    rowsPerPage: ClassVar[int] = 12
+    showBlackFridayBanner: ClassVar[bool] = True
     admin: ClassVar[class] = Admin()
  
