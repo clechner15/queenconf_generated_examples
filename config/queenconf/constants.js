@@ -1,5 +1,5 @@
 const config = {
-    "showExtraHeader": extra,
+    "showExtraHeader": true,
     "rowsPerPage": 5,
     "userMenuVisible": false,
     "showBlackFridayBanner": false,

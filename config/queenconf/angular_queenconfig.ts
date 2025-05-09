@@ -18,7 +18,7 @@ class Admin
 
 class Config
 {
-    static readonly showExtraHeader = extra;
+    static readonly showExtraHeader = true;
     static readonly rowsPerPage = 5;
     static readonly userMenuVisible = false;
     static readonly showBlackFridayBanner = false;
