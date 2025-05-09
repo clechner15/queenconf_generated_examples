@@ -1,5 +1,5 @@
 const config = {
-    "showExtraHeader": true,
+    "showExtraHeader": false,
     "rowsPerPage": 4,
     "showBlackFridayBanner": true,
     "admin": [{"adminPageIconName": "user"}]

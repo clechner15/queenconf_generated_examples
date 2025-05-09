@@ -23,7 +23,7 @@ class Admin:
     def __init__(self):
         pass
 
-    showExtraHeader: ClassVar[bool] = True
+    showExtraHeader: ClassVar[bool] = False
     rowsPerPage: ClassVar[int] = 4
     showBlackFridayBanner: ClassVar[bool] = True
     admin: ClassVar[class] = Admin()
