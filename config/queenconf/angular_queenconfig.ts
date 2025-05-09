@@ -20,7 +20,7 @@ class Config
 {
     static readonly showExtraHeader = true;
     static readonly rowsPerPage = 7;
-    static readonly showBlackFridayBanner = true;
+    static readonly showBlackFridayBanner = false;
     static readonly admin = new Admin();
 };
 

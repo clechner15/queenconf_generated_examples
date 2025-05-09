@@ -12,7 +12,7 @@ public class Queenconf {
 
   public final boolean showExtraHeader = true; // show extra header
   public final int rowsPerPage = 7; // how many rows per page are shown
-  public final boolean showBlackFridayBanner = true; // show black friday banner
+  public final boolean showBlackFridayBanner = false; // show black friday banner
     }
 
 }
