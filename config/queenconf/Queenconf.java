@@ -10,6 +10,12 @@ public class Queenconf {
 
         public final Admin admin = new Admin();
 
+        public class Laywer {
+  public final String codeOfConductContent = "Every participant has to...."; // content of code of conduct
+        }
+
+        public final Laywer laywer = new Laywer();
+
   public final boolean showExtraHeader = true; // show extra header
   public final int rowsPerPage = 8; // how many rows per page are shown
   public final boolean userMenuVisible = false; // the user menu should be shown or hidden

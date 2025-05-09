@@ -16,6 +16,11 @@ class Admin
     static readonly adminPageIconName = 'user';
 };
 
+class Laywer
+{
+    static readonly codeOfConductContent = 'Every participant has to....';
+};
+
 class Config
 {
     static readonly showExtraHeader = true;
@@ -23,6 +28,7 @@ class Config
     static readonly userMenuVisible = false;
     static readonly showBlackFridayBanner = true;
     static readonly admin = new Admin();
+    static readonly laywer = new Laywer();
 };
 
 

@@ -19,6 +19,11 @@ class Admin:
         pass
 
     adminPageIconName: ClassVar[str] = 'user'
+ class Laywer:
+    def __init__(self):
+        pass
+
+    codeOfConductContent: ClassVar[str] = 'Every participant has to....'
  class Config:
     def __init__(self):
         pass
@@ -28,4 +33,5 @@ class Admin:
     userMenuVisible: ClassVar[bool] = False
     showBlackFridayBanner: ClassVar[bool] = True
     admin: ClassVar[class] = Admin()
+    laywer: ClassVar[class] = Laywer()
  
