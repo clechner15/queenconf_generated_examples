@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Pagination</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .pagination button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .black-friday-banner {
+            background: linear-gradient(45deg, #000000, #ff0000);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="blackFridayBanner" class="black-friday-banner">
+        🎉 BLACK FRIDAY SALE - UP TO 50% OFF! 🎉
+    </div>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" id="extraLink" style="display: none;">Extra</a>
+        </nav>
+    </header>
+
+    <main>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table content will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="pagination" id="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </main>
+
+    <script src="../../config/queenconf/constants.js"></script>
+    <script>
+        // Sample data
+        const data = Array.from({ length: 50 }, (_, i) => ({
+            id: i + 1,
+            name: `Product ${i + 1}`,
+            price: `${(i + 1)*7.3} EUR`
+        }));
+
+        let currentPage = 1;
+
+        function updateTable() {
+            const start = (currentPage - 1) * config.rowsPerPage;
+            const end = start + config.rowsPerPage;
+            const pageData = data.slice(start, end);
+
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+
+            pageData.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            document.getElementById('pageInfo').textContent = `Page ${currentPage}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = end >= data.length;
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updateTable();
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            const end = currentPage * rowsPerPage;
+            if (end < data.length) {
+                currentPage++;
+                updateTable();
+            }
+        });
+
+        // Toggle extra link visibility based on constant
+        document.getElementById('extraLink').style.display = config.showExtraHeader ? 'inline' : 'none';
+
+        // Toggle Black Friday banner visibility based on constant
+        document.getElementById('blackFridayBanner').style.display = config.showBlackFridayBanner ? 'block' : 'none';
+
+        // Initial table update
+        updateTable();
+    </script>
+</body>
+</html> 
