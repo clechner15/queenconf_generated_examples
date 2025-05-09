@@ -19,7 +19,7 @@ class Admin
 class Config
 {
     static readonly showExtraHeader = true;
-    static readonly rowsPerPage = 12;
+    static readonly rowsPerPage = 8;
     static readonly showBlackFridayBanner = true;
     static readonly admin = new Admin();
 };

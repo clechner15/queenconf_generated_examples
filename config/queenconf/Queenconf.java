@@ -11,7 +11,7 @@ public class Queenconf {
         public final Admin admin = new Admin();
 
   public final boolean showExtraHeader = true; // show extra header
-  public final int rowsPerPage = 12; // how many rows per page are shown
+  public final int rowsPerPage = 8; // how many rows per page are shown
   public final boolean showBlackFridayBanner = true; // show black friday banner
     }
 
