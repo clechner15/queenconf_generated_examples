@@ -24,7 +24,7 @@ class Admin:
         pass
 
     showExtraHeader: ClassVar[bool] = True
-    rowsPerPage: ClassVar[int] = 5
+    rowsPerPage: ClassVar[int] = 8
     userMenuVisible: ClassVar[bool] = False
     showBlackFridayBanner: ClassVar[bool] = False
     admin: ClassVar[class] = Admin()
