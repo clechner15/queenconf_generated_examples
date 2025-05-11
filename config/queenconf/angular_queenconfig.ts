@@ -24,7 +24,7 @@ class Laywer
 class Config
 {
     static readonly showExtraHeader = true;
-    static readonly rowsPerPage = 8;
+    static readonly rowsPerPage = 4;
     static readonly userMenuVisible = false;
     static readonly showBlackFridayBanner = true;
     static readonly admin = new Admin();
