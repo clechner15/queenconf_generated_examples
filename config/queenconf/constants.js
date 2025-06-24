@@ -1,8 +1,8 @@
 const config = {
     "showExtraHeader": true,
-    "rowsPerPage": 7,
+    "rowsPerPage": 4,
     "userMenuVisible": false,
     "showBlackFridayBanner": true,
     "admin": [{"adminPageIconName": "user"}],
-    "laywer": [{"codeOfConductContent": "Every participant has to...."}]
+    "laywer": [{"codeOfConductContent": "Every participant has to....","extraPageTitle": "\"\""}]
 }; 
