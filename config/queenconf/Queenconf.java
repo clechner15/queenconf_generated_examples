@@ -4,23 +4,24 @@ public class Queenconf {
 
 
     public class Config {
-        public class Admin {
-          public final String adminPageIconName = "user"; // name of icon for admin page
+        public class Leaf0 {
         }
 
-        public final Admin admin = new Admin();
+        public final Leaf0 leaf0 = new Leaf0();
 
-        public class Laywer {
-          public final String codeOfConductContent = "Every participant has to...."; // content of code of conduct
-          public final String extraPageTitle = "\"\""; // show the tiltle of the extra page
+        public class Leaf1 {
+          public final String adminButtonSaveSettingsText = "\"Save Settings\""; // text which is shown on the admin button to save the settings
+          public final boolean showOrHideGearIcon = true; // show or hide gear icon
         }
 
-        public final Laywer laywer = new Laywer();
+        public final Leaf1 leaf1 = new Leaf1();
 
-          public final boolean showExtraHeader = true; // show extra header
-          public final int rowsPerPage = 4; // how many rows per page are shown
-          public final boolean userMenuVisible = false; // the user menu should be shown or hidden
-          public final boolean showBlackFridayBanner = true; // show black friday banner
+        public class Leaf2 {
+        }
+
+        public final Leaf2 leaf2 = new Leaf2();
+
+          public final String leaf_3 = ""; // asdfasdfsssss
     }
 
 }

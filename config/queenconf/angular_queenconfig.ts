@@ -11,25 +11,26 @@ export class Queenconfig {
  }
 
 
-class Admin
+class Leaf0
 {
-    static readonly adminPageIconName = 'user';
 };
 
-class Laywer
+class Leaf1
 {
-    static readonly codeOfConductContent = 'Every participant has to....';
-    static readonly extraPageTitle = '';
+    static readonly adminButtonSaveSettingsText = 'Save Settings';
+    static readonly showOrHideGearIcon = true;
+};
+
+class Leaf2
+{
 };
 
 class Config
 {
-    static readonly showExtraHeader = true;
-    static readonly rowsPerPage = 4;
-    static readonly userMenuVisible = false;
-    static readonly showBlackFridayBanner = true;
-    static readonly admin = new Admin();
-    static readonly laywer = new Laywer();
+    static readonly leaf0 = new Leaf0();
+    static readonly leaf1 = new Leaf1();
+    static readonly leaf2 = new Leaf2();
+    static readonly leaf3 = aasdfasdfasdfasdfasdfdfasdfadsfasdfasdfasdfadsfadsfasdfadsfaw23423432324sdfasdfadsfasdf   sadfsdfsd asdfsdf asdfasdfasdfasdfasdfasdfa   sdfasdfasdfadsfasdfadsfsdf;
 };
 
 

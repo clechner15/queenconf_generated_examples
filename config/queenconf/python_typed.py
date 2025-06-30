@@ -14,25 +14,26 @@ class Queenconfig:
         self.config = Config()
 
 
-class Admin:
+class Leaf0:
     def __init__(self):
         pass
 
-    adminPageIconName: ClassVar[str] = 'user'
-class Laywer:
+class Leaf1:
     def __init__(self):
         pass
 
-    codeOfConductContent: ClassVar[str] = 'Every participant has to....'
-    extraPageTitle: ClassVar[str] = '""'
+    adminButtonSaveSettingsText: ClassVar[str] = '"Save Settings"'
+    showOrHideGearIcon: ClassVar[bool] = True
+class Leaf2:
+    def __init__(self):
+        pass
+
 class Config:
     def __init__(self):
         pass
 
-    showExtraHeader: ClassVar[bool] = True
-    rowsPerPage: ClassVar[int] = 4
-    userMenuVisible: ClassVar[bool] = False
-    showBlackFridayBanner: ClassVar[bool] = True
-    admin: ClassVar[class] = Admin()
-    laywer: ClassVar[class] = Laywer()
+    leaf0: ClassVar[class] = Leaf0()
+    leaf1: ClassVar[class] = Leaf1()
+    leaf2: ClassVar[class] = Leaf2()
+    leaf3: ClassVar[str] = 'aasdfasdfasdfasdfasdfdfasdfadsfasdfasdfasdfadsfadsfasdfadsfaw23423432324sdfasdfadsfasdf   sadfsdfsd asdfsdf asdfasdfasdfasdfasdfasdfa   sdfasdfasdfadsfasdfadsfsdf'
 
