@@ -1,6 +1,6 @@
 const config = {
     "showExtraHeader": true,
-    "rowsPerPage": 4,
+    "rowsPerPage": 6,
     "userMenuVisible": false,
     "showBlackFridayBanner": true,
     "admin": [{"adminPageIconName": "user"}],
