@@ -1,6 +1,8 @@
 const config = {
-    "leaf0": [{}],
-    "leaf1": [{"adminButtonSaveSettingsText": "\"Save Settings\"","showOrHideGearIcon": true}],
-    "leaf2": [{}],
-    "leaf3": 
+    "showExtraHeader": true,
+    "rowsPerPage": 4,
+    "userMenuVisible": false,
+    "showBlackFridayBanner": true,
+    "admin": [{"adminPageIconName": "user"}],
+    "laywer": [{"codeOfConductContent": "Every participant has to....","extraPageTitle": "\"\""}]
 }; 
