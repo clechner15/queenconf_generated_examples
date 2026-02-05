@@ -18,6 +18,16 @@ class Menu:
     def __init__(self):
         pass
 
+class New4:
+    def __init__(self):
+        pass
+
+class New5:
+    def __init__(self):
+        pass
+
+    new1: ClassVar[str] = ''
+    new2: ClassVar[str] = ''
 class Config:
     def __init__(self):
         pass
@@ -26,4 +36,6 @@ class Config:
     showBlackFridayBanner: ClassVar[bool] = True
     showExtraHeader: ClassVar[bool] = False
     menu: ClassVar[class] = Menu()
+    new4: ClassVar[class] = New4()
+    new5: ClassVar[class] = New5()
 
